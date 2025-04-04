@@ -6,6 +6,7 @@ if [ -d ".venv" ]; then
     echo ".venv exists"
 else
     python3.10 -m venv .venv
+    echo "Environment Created"
 fi
 
 # Print current directory
