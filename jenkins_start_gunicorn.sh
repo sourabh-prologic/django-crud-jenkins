@@ -10,4 +10,7 @@ else
 fi
 
 # Start Gunicorn with 3 workers
-gunicorn --workers 3 --bind 0.0.0.0:8000 crud.wsgi:application
+gunicorn --workers 3 --bind 0.0.0.0:8000 crud.wsgi:application > logs/gunicorn.log 2>&1 &
+
+
+echo "Gunicorn started successfully!"
