@@ -28,6 +28,6 @@ else
 fi
 
 # Change permissions for logs
-sudo chmod -R 777 logs -S welcome
+# sudo chmod -R 777 logs -S welcome
 
 echo "Environment Setup Completed!"
